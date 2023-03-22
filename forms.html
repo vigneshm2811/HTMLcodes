@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:#a10735;
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 35vw;
+            height: 20vw;
+            background-color: #630927;
+            padding: 10px;
+            color: white;
+        }
+        h1,p{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Register</h1>
+        <p>Kindly fill this form</p>
+    </div>
+    <form action="#">
+        <div class="container">
+            <table>
+            <tr>
+           <td><label for="your name">Name:</label> </td>
+           <td><input type="text" name="your name" placeholder="your name"></td> 
+        </tr>
+        <tr>
+       <td> <label for="your email">Email:</label></td>
+       <td> <input type="email" name="your email" placeholder="your email"></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password:</label></td>
+       <td> <input type="password" name="password"></td>
+    </tr>
+        <tr>
+        <td><label for="phone">Phone Number:</label></td>
+       <td> <input type="number" name="phone"></td>
+    </tr>
+ 
+        <tr>
+            <td>
+        <label for="Gender"> Gender:</label></td>
+       <td>Male: <input type="radio" name="Gender" value="Male">
+        Female:<input type="radio" name="Gender" value="Female">
+        Others: <input type="radio" name="Gender" value="Others">
+    </td>
+    </tr>
+
+        <tr>
+            <td>
+        <label for="language">Language</label></td>
+        <td><select name="language" id="">
+            <option value="">Select language</option>
+            <option value="T">Tamil</option>
+            <option value="En">English</option>
+            <option value="H">Hindi</option>
+            <option value="s">spanish</option>
+            <option value="J">japanese</option>
+        </select>
+    </td>
+    </tr>
+    <tr>
+        <td><label for="Zip code">Zip code:</label></td>
+        <td><input type="number" name="Zip code"></td>
+    </tr>
+    <tr>
+       <td> <label for="About">About:</label> </td>
+      <td> <textarea name="About" id="" cols="30" rows="3" placeholder="write about yourself"></textarea></td>
+    </tr>
+    </table>
+        <input type="button" value="Register" style="width: 20pc; align-self: center;">
+    </div>
+    </form>
+</body>
+
+</html>
+<!--
+    <h1>Registration</h1>
+    <form>
+        <lable>User name:</lable>
+        <input type="text" name="username">
+        <br><br>
+        <label> Password:</label>
+        <input type="password" name="password">
+        <br> <br>
+        <lable>Gender</lable>
+        <input type="radio" name="Gender" value="Male"> Male 
+        <input type="radio" name="Gender" value="Female"> Female
+        <br>
+        <textarea>
+        write here
+        </textarea>
+    </form>
+-->
+<!--<textarea>
+The <textarea> tag in HTML is used to insert multiple-line text in a form.
+-->

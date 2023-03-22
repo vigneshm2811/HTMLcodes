@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="right" width="50%" bgcolor="yellow" scrolldelay="10" scrollamount="">
+        Kindly Register this form ASAP</marquee>
+    <form action="#">
+        <div class="container">
+            <table border="3px" align="center">
+            <tr>
+                <th colspan="2" align="center">Registration Form</th>
+            </tr>
+            <tr>
+               <td><label for="your name">Student Name</label> </td>
+               <td><input type="text" name="your name" required></td> 
+            </tr>
+            <tr>
+                <td><label for="father name">Father's Name</label> </td>
+                <td><input type="text" name="father name"></td> 
+             </tr>
+             <tr>
+                <td><label for="mother name">Mother's Name</label> </td>
+                <td><input type="text" name="mother name"></td> 
+             </tr>
+               
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender"> Gender</label></td>
+                <td>Male <input type="radio" name="Gender" value="Male">
+                Female<input type="radio" name="Gender" value="Female">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="branch">Branch</label></td>
+                <td>
+                    <select name="branch" id="" multiple>
+                        <option value="">Select branch</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CSE">civil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="your email">Email ID</label></td>
+                <td><input type="email" name="your email" placeholder="your email" required></td>
+            </tr>
+            <tr>
+                <td><label for="Mobile number">Mobile No</label></td>
+                <td>*<input type="tel" name="Mobile number" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td> <label for="Address">Address</label> </td>
+               <td> <textarea name="Address" id="" cols="25" rows="3" ></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td><label for="city"> City</label></td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="image" src="images/submit.jpg" value="submit" width="150" height="40"></td>
+            </tr>
+        </table>
+        </div>
+        </form>
+</body>
+</html>
